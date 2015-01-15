@@ -1,1 +1,4 @@
 /* CSS declarations go here */
+.carousel-inner > .item > img {
+	margin : 0 auto;
+}
