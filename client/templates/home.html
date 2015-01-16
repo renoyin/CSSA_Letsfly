@@ -1,9 +1,8 @@
+<template name="home">
+
 <head>
-  <title>letsfly</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
 </head>
-
-<body>
-
 <!-- carousel -->
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -61,8 +60,21 @@
   </div>
 
 
- 
-  
 
-</body>
+
+<!-- trigger carousel -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.carousel').carousel({
+            interval: 5000,
+            cycle: true
+        });
+    });
+</script>
+
+
+
+</template>
+
+
 
