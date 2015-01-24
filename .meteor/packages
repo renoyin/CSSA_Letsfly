@@ -11,3 +11,6 @@ nemo64:bootstrap
 less
 iron:router
 accounts-ui
+accounts-password
+accounts-facebook
+accounts-google
