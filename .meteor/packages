@@ -13,4 +13,4 @@ iron:router
 accounts-password
 accounts-facebook
 accounts-google
-ian:accounts-ui-bootstrap-3
+joshowens:accounts-entry
