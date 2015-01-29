@@ -4,11 +4,15 @@
 	{{> yield "header"}}
 </div>
 
-<div class="container">
-	{{> yield}}
+<div id="wrap">
+	<div class="container">
+		{{> yield}}
+	</div>
+
+	<div id="push"></div>
 </div>
 
-<div>
+<div id="footer">
 	{{> yield "footer"}}
 </div>
 	
