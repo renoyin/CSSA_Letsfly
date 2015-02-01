@@ -1,0 +1,18 @@
+<template name="flightsList">
+	<div class="flights">
+		<table class="table table-striped">
+			<tr class="header">
+				<th> 目的地</th>
+				<th> 起飞机场 </th>
+				<th> 航班号 </th>
+				<th> 出发日期 </th>
+			</tr>
+
+			<tbody class="top30">
+				{{#each flights}}
+					{{> flightItem}}
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>
