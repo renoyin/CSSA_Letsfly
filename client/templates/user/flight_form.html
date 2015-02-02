@@ -1,0 +1,125 @@
+<template name="flightInfo">
+
+	<div class="page-header">
+	  <h1>UCSD CSSA 同飞平台 <small> &nbsp;航班及相关信息填写</small></h1>
+	</div>
+	
+	<div class="row">
+	  <div class="col-md-4"></div>
+	  
+
+
+
+	  <div class="col-md-4">
+	  	
+	  	<div class="row top30"></div>
+
+	  	<form class="form-horizontal">
+
+	  		<!-- 出发城市 -->
+	  		<div class="form-group">
+				<label for="leaveCity" class="col-sm-4 control-label">出发城市</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control" id="leaveCity" placeholder="例如：北京、上海、广州">
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+
+			<!-- 出发航班 -->
+			<div class="form-group">
+				<label for="leaveFlightNumber" class="col-sm-4 control-label">出发航班号</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control" id="leaveFlightNumber" placeholder="请仔细填写航班号">
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+
+			<!-- 出发日期 -->
+			<div class="form-group">
+			  	<label for="leaveDate" class="col-sm-4 control-label">出发日期</label>
+				<div class="col-sm-8">
+					<input class="form-control" id="leaveDate" placeholder="dd/mm/yy">	  		
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+		  	
+	  		<!-- 到达城市 -->
+			<div class="form-group">
+				<label for="arriveCity" class="col-sm-4 control-label">到达城市</label>
+				<div class="col-sm-8">
+					<select class="form-control">
+						<option value="" disabled selected>--请选择航班降落地点--</option>
+						<option name="LA" value="LA">洛杉矶</option>
+						<option name="SD" value="SD">圣地亚哥</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+
+			<!-- 到达航班 -->
+			<div class="form-group">
+				<label for="arriveFlightNumber" class="col-sm-4 control-label">到达航班号</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control" id="arriveFlightNumber" placeholder="请仔细填写航班号">
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+
+			<!-- 到达日期 -->
+			<div class="form-group">
+			  	<label for="arriveDate" class="col-sm-4 control-label">到达日期</label>
+				<div class="col-sm-8">
+					<input class="form-control" id="arriveDate" placeholder="dd/mm/yy">	  		
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+
+			<!-- 抵达UCSD的方式 -->
+			<div class="form-group">
+				<label for="toUCSD" class="col-sm-4 control-label">如何抵达UCSD</label>
+				<div class="col-sm-8">
+					<div class="radio">
+						<label>
+					    	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">亲友或学长学姐接送
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+					    	<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">希望寻找小伙伴租车
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+					    	<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">另有打算
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row top30"></div>
+
+			<div class="btn-group" role="group" style="float: right">
+  				<button type="submit" class="btn btn-primary" id="finishButton" data-loading-text="Loading..." autocomplete="off">完成</button>
+			</div>
+
+
+		</form>
+
+		
+
+	  </div>
+
+
+	  
+
+
+	  <div class="col-md-4"></div>
+	</div>
+
+</template>
