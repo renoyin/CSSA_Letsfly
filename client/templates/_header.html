@@ -13,14 +13,24 @@
         <a class="navbar-brand" href="/"><b>UCSD CSSA</b></a>
       </div>
 
-      <div class="collapse navbar-collapse" id="main-nav">
 
-        
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><b>同飞平台</b></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">更多平台<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">拼车</a></li>
+              <li><a href="#">短租</a></li>
+            </ul>
+          </li>
+        </ul>
+
         {{#if currentUser}}
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-user"></i> {{ firstName }} <i class="fa fa-caret-down"></i>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                <i class="fa fa-user"></i> {{ firstName }} <span class="caret"></span><i class="fa fa-caret-down"></i>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="{{ pathFor 'profile' }}"><i class="fa fa-user"></i> Profile</a></li>
@@ -34,7 +44,6 @@
             <a href="/sign-up" class="btn btn-primary navbar-btn">注册</a>
           </div>
         {{/if}}
-
       </div>
 
     </div>
